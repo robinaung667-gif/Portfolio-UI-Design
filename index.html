@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "sidebar"> <!-- that is one class named for over all -->
+        <div class = "profile-container">
+        <img src = "image1.jpg" alt = "Aung Kaung Sett"> <!-- we can use .sidebar img with class-->
+        <span class = "status-dot"></span> <!-- we can use .sidebar span with class (online dot)-->
+        </div>
+        <h2>Aung Kaung Sett</h2>
+        <p>Aspiring developer</p>
+
+        <ul class="sidebar-nav">
+            <li class="active"><button type="button" data-target="dashboard">🏠 Dashboard</button></li>
+            <li><button type="button" data-target="about">👤 About Me</button></li>
+            <li><button type="button" data-target="skills">💻 Skills</button></li>
+            <li><button type="button" data-target="projects">📁 Projects</button></li>
+            <li><button type="button" data-target="education">🎓 Educations</button></li>
+            <li><button type="button" data-target="contact">✉️ Contact</button></li>
+
+        </ul>
+
+    </div>
+
+    <div class="main-content"> <!-- that is one class named for over all (Main content)-->
+
+    <div class="content-left"> <!-- Welcome Card and About Me Card in left site-->
+
+        <!-- Welcome Card1️⃣ -->
+        <div class="welcome-card" id="dashboard">
+
+            <div class="welcome-left"> <!-- That is Capcut icon from left size-->
+
+                <div class="icon-box"> <!-- Created icon box for it-->
+                    <img src="cupcut.png" alt="Code Icon">
+                </div>
+
+                <div>
+                    <h1 style="color:white;">
+                        Hi, I'm <span style="color:#8b5cf6;">Aung Kaung Sett</span> 👋
+                    </h1>
+
+                    <p style="color:white;">
+                        I'm an aspiring developer passionate about
+                        building <br> useful and creative things through code.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="welcome-right">     <!-- That is stats-grid (for right size only)-->
+                                                 <!--Projects, Skills, Education, Certificates -->
+                
+                <img src="image.png" alt="Macbook">
+            </div>
+
+        </div>
+    <div class="middle-grid">    
+
+        <!-- About Me Card In Middle One✅-->
+        <div class="about-card" id="about">
+
+            <div class="card-title">
+                <i class="fa-solid fa-user"></i> <!-- icon + title in a same place-->
+                <h2>About Me</h2>
+            </div>
+
+            <p>
+                Hello! I'm <span>Aung Kaung Sett</span>, a passionate Junior Web Developer
+                who enjoys building beautiful and responsive websites.
+
+                I'm currently learning HTML, CSS, JavaScript and Python while
+                creating real-world projects every day to improve my skills and
+                become a professional remote developer.
+            </p>
+
+            <button>Read More</button>
+
+        </div>
+
+        <!-- Skills Card-->
+        <div class="skills-card" id="skills">
+
+            <div class="card-title">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Skills</h2>
+            </div>
+
+            <!--HTML -->
+            <div class = "skill">
+
+                <div class = "skill-info">
+                    <span>HTML</span>
+                    <span>95%</span>
+                </div>
+
+                <div class = "progress">
+
+                    <div class = "progress-bar html"></div>
+
+                </div>
+
+            </div>
+
+            <!--CSS -->
+            <div class = "skill">
+                <div class = "skill-info">
+                    <span>CSS</span>
+                    <span>90%</span>
+                </div>
+                <div class = "progress">
+
+                    <div class = "progress-bar css"></div>
+
+                </div>
+
+            </div>
+
+            <!--JavaScript -->
+            <div class = "skill">
+                <div class = "skill-info">
+                    <span>JavaScript</span>
+                    <span>70%</span>
+                </div>
+                <div class = "progress">
+
+                    <div class = "progress-bar js"></div>
+
+                </div>
+
+            </div>
+
+            <!--Python -->
+            <div class = "skill">
+                <div class = "skill-info">
+                    <span>Python</span>
+                    <span>90%</span>
+                </div>
+                <div class = "progress">
+
+                    <div class = "progress-bar python"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Projects Card -->
+        <div class="projects-card" id="projects">
+
+            <div class="card-title">
+                <i class="fa-regular fa-folder"></i>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="project-item">
+                <i class="fa-solid fa-gamepad"></i>
+                <div>
+                    <h3>Programming Guessing Game</h3>
+                    <p>A number guessing game built with Python.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <i class="fa-solid fa-utensils"></i>
+                <div>
+                    <h3>
+                        <a href="https://github.com/robinaung667-gif/burmese-food-restaurant" target="_blank" rel="noopener noreferrer">
+                            Kaung Sett Burmese Food Restaurant
+                        </a>
+                    </h3>
+                    <p>Burmese food restaurant website project.</p>
+                    <a class="project-demo" href="https://robinaung667-gif.github.io/burmese-food-restaurant/" target="_blank" rel="noopener noreferrer">View Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <i class="fa-solid fa-list-check"></i>
+                <div>
+                    <h3>To-Do List</h3>
+                    <p>A simple task management app for organizing daily work.</p>
+                    <a class="project-demo" href="https://robinaung667-gif.github.io/To-Do-List/" target="_blank" rel="noopener noreferrer">View Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <i class="fa-solid fa-globe"></i>
+                <div>
+                    <h3>Portfolio Website</h3>
+                    <p>My personal portfolio website.</p>
+                </div>
+            </div>
+
+            <a href="#projects" class="view-projects">View All Projects</a>
+
+        </div>
+
+    </div> <!-- MIDDLE GRID-->
+    <!-- Bottom Grid -->
+<div class="bottom-grid">
+
+    <!-- Education Card -->
+    <div class="education-card" id="education">
+
+        <div class="card-title">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Education</h2>
+        </div>
+
+        <div class="education-item">
+            <div class="circle"></div>
+
+            <div>
+                <h3>Computer Science</h3>
+                <ul>
+                 <li>Bachelor of Computer Science UK </li>
+                    <span>2028 - Graduated</span>
+                   <br>
+                 <li>Level 5 UK OTHM IT(2026)</li>
+                   <span>2027 - Graduated</span>
+                   <br>
+                 <li>Level 4 UK OTHM IT(2025) </li>
+                  <span>2026 - Graduated</span>
+                </p>
+            </ul>
+                
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="circle"></div>
+
+            <div>
+                <h3>High School</h3>
+                
+                <li>MIBA Level 3 OTHM Foundation For Higher Diploma UK</li>
+                <span>2026 - Graduated</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contact Card -->
+    <div class="contact-card" id="contact">
+
+        <div class="card-title">
+            <i class="fa-solid fa-envelope"></i>
+            <h2>Contact Me</h2>
+        </div>
+
+        <p class="contact-text">
+            Feel free to contact me through these platforms.
+        </p>
+
+        <div class="contact-grid">
+
+            <!-- Email -->
+            <div class="contact-box">
+
+                <img src="email.png" alt="Email">
+
+                <div>
+                    <h4>Email</h4>
+                    <span>robinaung667@gmail.com</span>
+                </div>
+
+            </div>
+
+            <!-- Facebook -->
+            <div class="contact-box">
+
+                <img src="facebook.png " border-radius="5px" alt="Facebook">
+
+                <div>
+                    <h4>Facebook</h4>
+                    <a href="https://www.facebook.com/share/18N9ySffEF/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">facebook.com/share/18N9ySffEF</a>
+                </div>
+
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-box">
+                
+                <img src="github.png" alt="Github">
+                
+                <div>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/robinaung667-gif" target="_blank" rel="noopener noreferrer">github.com/robinaung667-gif</a>
+                </div>
+
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-box">
+
+                <img src="linkedin.png" alt="LinkedIn">
+
+                <div>
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/aung-kaung-sett-undefined-986883438/" target="_blank" rel="noopener noreferrer">linkedin.com/in/aung-kaung-sett-undefined-986883438</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="footer">
+<p> © 2026 Aung Kaung Sett. All rights reserved.</p>
+</div>
+    
+    
+</div>
+<script>
+    const navigationButtons = document.querySelectorAll(".sidebar-nav button");
+
+    navigationButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const target = document.getElementById(button.dataset.target);
+
+            navigationButtons.forEach((navButton) => {
+                navButton.closest("li").classList.toggle("active", navButton === button);
+            });
+
+            target?.scrollIntoView({ behavior: "smooth", block: "center" });
+
+            target.classList.remove("card-jump");
+            requestAnimationFrame(() => target.classList.add("card-jump"));
+        });
+    });
+
+    const projectsCard = document.getElementById("projects");
+    const viewProjectsButton = document.querySelector(".view-projects");
+
+    viewProjectsButton?.addEventListener("click", (event) => {
+        event.preventDefault();
+        projectsCard?.classList.remove("expand-projects");
+        void projectsCard?.offsetWidth;
+        projectsCard?.classList.add("expand-projects");
+    });
+</script>
+</body>
+</html>
